@@ -28,4 +28,4 @@ Key Features:
 
 ClickFlock demonstrates how decentralized protocols, edge AI, and self-hosted infrastructure can create engaging social video experiences while respecting user privacy and agency.
 
-I could use your should help doing everything.
+I could use your help doing everything.
