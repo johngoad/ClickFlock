@@ -16,12 +16,14 @@ Feed generation algorithms that run locally on user devices rather than centrali
 
 Key Features:
 
-Create and edit videos with AI-powered effects that process locally
-Control your content distribution through IPFS embedding
-Interact seamlessly with the wider Bluesky social ecosystem
-Keep your data private with edge processing to customize recommendation algorithms to your preferences
-Import/export videos from other platforms
-Thread videos together for long-form storytelling
-Built-in creative tools for transitions, text overlays, and sound mixing
+- Create and edit videos with AI-powered effects that process locally
+- Control your content distribution through IPFS embedding
+- Interact seamlessly with the wider Bluesky social ecosystem
+- Keep your data private with edge processing to customize recommendation algorithms to your preferences
+- Import/export videos from other platforms
+- Thread videos together for long-form storytelling
+- Built-in creative tools for transitions, text overlays, and sound mixing
 
 ClickFlock demonstrates how decentralized protocols, edge AI, and self-hosted infrastructure can create engaging social video experiences while respecting user privacy and agency.
+
+I could use your should help doing everything.
