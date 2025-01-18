@@ -1,0 +1,165 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TikTok Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <header class="main-header">
+      <div class="logo-container">
+        <img src="https://raw.githubusercontent.com/johngoad/ClickFlock/main/LogoBP.png" alt="ClickFlock Logo" class="logo">
+      </div>
+    </header>
+    <nav class="sidebar">
+      <div class="nav-item" data-page="feed">
+        <i class="fas fa-home"></i>
+        <span>For You</span>
+      </div>
+      <div class="nav-item active" data-page="discover">
+        <i class="fas fa-compass"></i>
+        <span>Discover</span>
+      </div>
+      <div class="nav-item" data-page="create">
+        <i class="fas fa-plus-square"></i>
+        <span>Create</span>
+      </div>
+      <div class="nav-item" data-page="inbox">
+        <i class="fas fa-inbox"></i>
+        <span>Inbox</span>
+      </div>
+      <div class="nav-item" data-page="profile">
+        <i class="fas fa-user"></i>
+        <span>Profile</span>
+      </div>
+    </nav>
+
+    <main class="main-content">
+      <div class="feed-container container-inactive" id="feed-container">
+        <div class="video-container" id="video-container">
+          <!-- Videos will be populated by JavaScript -->
+        </div>
+      </div>
+      
+      <div class="discover-container container-active" id="discover-container">
+        <div class="discover-search">
+          <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search videos, users, or hashtags">
+          </div>
+        </div>
+
+        <div class="trending-section">
+          <h2>Trending Hashtags</h2>
+          <div class="hashtag-grid" id="hashtag-grid">
+            <!-- Hashtags will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <div class="categories-section">
+          <h2>Popular Categories</h2>
+          <div class="category-grid" id="category-grid">
+            <!-- Categories will be populated by JavaScript -->
+          </div>
+        </div>
+
+        <div class="suggested-section">
+          <h2>Suggested For You</h2>
+          <div class="suggested-grid" id="suggested-grid">
+            <!-- Suggested content will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <div class="create-container container-inactive" id="create-container">
+        <div class="upload-section">
+          <div class="camera-options">
+            <button class="camera-btn" id="camera-btn">
+              <i class="fas fa-video"></i>
+              Record with Camera
+            </button>
+            <span class="option-divider">or</span>
+          </div>
+          <div class="drop-zone" id="drop-zone">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <h2>Upload Video</h2>
+            <p>Drag and drop video files or</p>
+            <input type="file" id="video-upload" accept="video/*" hidden>
+            <button class="upload-btn" onclick="document.getElementById('video-upload').click()">
+              Select File
+            </button>
+          </div>
+          
+          <div class="preview-container" id="preview-container"></div>
+          
+          <div class="camera-container" id="camera-container" style="display: none;">
+            <video id="camera-preview" autoplay playsinline></video>
+            <div class="camera-controls">
+              <button class="record-btn" id="record-btn">
+                <i class="fas fa-circle"></i>
+              </button>
+              <button class="camera-switch-btn" id="camera-switch-btn">
+                <i class="fas fa-sync"></i>
+              </button>
+              <button class="camera-close-btn" id="camera-close-btn">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="edit-container" id="edit-container">
+            <div class="edit-section">
+              <h3>Filters</h3>
+              <div class="filter-container" id="filter-container">
+                <!-- Filters will be populated by JavaScript -->
+              </div>
+            </div>
+            
+            <div class="edit-section">
+              <h3>Sounds</h3>
+              <div class="sound-container" id="sound-container">
+                <!-- Sounds will be populated by JavaScript -->
+              </div>
+            </div>
+            
+            <div class="post-actions">
+              <button class="draft-button">Save as Draft</button>
+              <button class="post-button">Post Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="inbox-container container-inactive" id="inbox-container">
+        <div class="inbox-tabs">
+          <div class="inbox-tab active" data-tab="messages">
+            Messages <span class="badge">2</span>
+          </div>
+          <div class="inbox-tab" data-tab="notifications">
+            Notifications <span class="badge">3</span>
+          </div>
+        </div>
+
+        <div class="message-list" id="message-list">
+          <!-- Messages will be populated by JavaScript -->
+        </div>
+
+        <div class="message-list" id="notification-list" style="display: none;">
+          <!-- Notifications will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <div class="profile-container container-inactive" id="profile-container">
+        <!-- Content will be populated by JavaScript -->
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="app.js"></script>
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+    <i class="fas fa-moon"></i>
+  </button>
+</body>
+</html>
