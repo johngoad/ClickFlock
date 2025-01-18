@@ -1,5 +1,6 @@
 
-![Logo1BP](https://github.com/user-attachments/assets/bd7da860-7932-406d-a58f-0411c982edb2)
+![Logo2BP](https://github.com/user-attachments/assets/6ad69f80-624c-45db-9e51-9850f675fef8)
+
 
 
 And open sourced alternative to the Clock app
